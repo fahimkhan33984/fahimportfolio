@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            max-width: 1100px;
+            background-color: rgb(22, 22, 69);
+            margin: 0 auto;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(194, 194, 239);
+            font-size: 1.03rem;
+        }
+        
+        .left {
+            font-size: 1.5rem;
+        }
+        
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: auto;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+        
+        .firstsection>div {
+            width: 36%;
+            min-width: 280px;
+        }
+        
+        .leftsection {
+            padding-top: 80px;
+            margin: 30px;
+            height: auto;
+            font-size: 2rem;
+        }
+        
+        .rightsection img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        
+        .purple {
+            color: #a866e5;
+        }
+        
+        #element {
+            color: #a070de;
+        }
+        
+        .secondsection {
+            margin: auto;
+            max-width: 80vw;
+            padding-bottom: 200px;
+            height: auto;
+        }
+        
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+        
+        .text-gray {
+            color: gray;
+        }
+        
+        .secondsection .box {
+            background: black;
+            width: 76vw;
+            height: 2px;
+            margin: 55px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .secondsection .verticle {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 60px;
+            position: relative;
+        }
+        
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        
+        .verticle-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        
+        .verticle-decs {
+            position: relative;
+            top: 8px;
+            color: gray;
+            width: 150px;
+            font-size: 20px;
+        }
+        
+        .footer {
+            background-color: #3a3548;
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        
+        .footer ul {
+            list-style: none;
+        }
+        
+        .footer>div {
+            width: 223px;
+            margin-bottom: 10px;
+        }
+        
+        footer.footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+        
+        .button {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            color: black;
+            background-color: #a866e5;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background-color: #b77ef0;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                padding: 10px 0;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 10px;
+            }
+            .firstsection {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+            .firstsection>div {
+                width: 90%;
+            }
+            .leftsection {
+                padding-top: 40px;
+                height: auto;
+                font-size: 1.5rem;
+            }
+            .button {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+            .rightsection img {
+                max-width: 200px;
+                margin-top: 30px;
+            }
+            .secondsection {
+                padding-bottom: 100px;
+                height: auto;
+            }
+            .secondsection .box {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+            .secondsection .verticle {
+                height: auto;
+                width: 2px;
+                margin: 30px 0;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+            .footer>div {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Fahim's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Fahim Khan</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="dep.png" alt="Developer illustration">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="htm.png" alt="">
+                    <div class="verticle-text">HTML Developer
+                        <div>(2010-2012)</div>
+                    </div>
+                    <div class="verticle-decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+
+                <div class="verticle">
+                    <img class="image-top" src="cs.png" alt="">
+                    <div class="verticle-text">CSS Developer
+                        <div>(2012-2014)</div>
+                    </div>
+                    <div class="verticle-decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+
+                <div class="verticle">
+                    <img class="image-top" src="js.png" alt="">
+                    <div class="verticle-text">Node.js Developer
+                        <div>(2014-2016)</div>
+                    </div>
+                    <div class="verticle-decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+
+                <div class="verticle">
+                    <img class="image-top" src="top.png" alt="">
+                    <div class="verticle-text">Full Stack Developer
+                        <div>(2016-2020)</div>
+                    </div>
+                    <div class="verticle-decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Fahim's Developer Portfolio</h3>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.fahimsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Graphic designer', 'and video editor.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
